@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilePlus 다운로드</title>
+<meta property="og:title" content="FilePlus - 파일 정리 도구">
+<meta property="og:image" content="https://acttop.github.io/fileplus-releases/assets/banner.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+  :root {
+    --bg: #1E3A2B;
+    --paper: #F3EEDF;
+    --mustard: #E3A72E;
+    --mustard-light: #EFC168;
+    --ink: #2B2418;
+    --sage: #C7D6C6;
+    --sage-dim: #7F9A85;
+    --stamp: #A6362A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--paper);
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 24px 40px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 760px;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(10, 21, 15, 0.5);
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0 0 12px;
+    letter-spacing: -0.5px;
+  }
+
+  p.lead {
+    font-size: 17px;
+    color: var(--sage);
+    max-width: 560px;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0 0 36px;
+  }
+
+  .card {
+    background: rgba(243, 238, 223, 0.05);
+    border: 1px solid rgba(227, 167, 46, 0.35);
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+  }
+
+  .version {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--sage-dim);
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--mustard);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 30px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .download-btn:hover { background: var(--mustard-light); transform: translateY(-2px); }
+  .download-btn:focus-visible { outline: 3px solid var(--paper); outline-offset: 3px; }
+
+  .meta-row {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--sage-dim);
+  }
+
+  .notice {
+    max-width: 560px;
+    margin-top: 28px;
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: var(--sage-dim);
+    text-align: left;
+    background: rgba(166, 54, 42, 0.08);
+    border-left: 3px solid var(--stamp);
+    padding: 16px 20px;
+    border-radius: 4px;
+  }
+  .notice strong { color: var(--mustard-light); }
+
+  footer {
+    margin-top: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--sage-dim);
+  }
+  footer a { color: var(--sage-dim); }
+</style>
+</head>
+<body>
+
+  <img src="assets/banner.svg" alt="FilePlus" class="banner">
+
+  <p class="lead">
+    쌓여있는 파일, 흩어진 이름들 — 중복 탐지·전문 검색·메타정보 일괄 편집·자동 분류·이름 변경까지<br>
+    한 화면에서 정리하는 Windows용 파일 관리 도구입니다.
+  </p>
+
+  <div class="card">
+    <div class="version">FilePlus v1.0.0 · Windows Portable · 계정 로그인 불필요</div>
+    <a class="download-btn"
+       href="https://raw.githubusercontent.com/acttop/fileplus-releases/main/releases/v1.0.0/FilePlus-1.0.0-portable.exe"
+       download>
+      ⬇ 다운로드 (FilePlus-1.0.0-portable.exe)
+    </a>
+    <div class="meta-row">
+      <span>SHA-256 검증됨</span>
+      <span>약 70 MB</span>
+      <span>설치 불필요</span>
+    </div>
+  </div>
+
+  <div class="notice">
+    <strong>실행 시 안내</strong><br>
+    코드 서명 인증서가 적용되지 않아 Windows에서 "알 수 없는 게시자" 경고가 뜰 수 있습니다.
+    <strong>추가 정보 → 실행</strong>을 눌러 진행해주세요. 정상 파일입니다.
+  </div>
+
+  <footer>
+    <a href="https://github.com/acttop/fileplus-releases">github.com/acttop/fileplus-releases</a>
+  </footer>
+
+</body>
+</html>
